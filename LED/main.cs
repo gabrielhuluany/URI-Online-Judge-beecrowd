@@ -60,39 +60,39 @@ class Program {
 	for(int j = 0; j < numero.Count(); j++) {
 	    separado[j] = numero[j];
 	    switch(separado[j]) {
-		case '0':
-		case '6':
-		case '9':
-		    valores[i] += 6;
-		    break;
-		case '1':
-		    valores[i] += 2;
-		    break;
-		case '2':
-		case '3':
-		case '5':
-		    valores[i] += 5;
-		    break;
-		case '4':
-		    valores[i] += 4;
-		    break;
-		case '7':
-		    valores[i] += 3;
-		    break;
-		case '8':
-		    valores[i] += 7;
-		    break;
-		default:
-		    valores[i] += 0;
-		    break;
+	       case '0':
+	       case '6':
+	       case '9':
+	           valores[i] += 6;
+	           break;
+	       case '1':
+	           valores[i] += 2;
+	           break;
+	       case '2':
+	       case '3':
+	       case '5':
+	           valores[i] += 5;
+	           break;
+	       case '4':
+	           valores[i] += 4;
+	           break;
+	       case '7':
+	           valores[i] += 3;
+	           break;
+	       case '8':
+	           valores[i] += 7;
+	           break;
+	       default:
+	           valores[i] += 0;
+	           break;
 	    }
 	}
     }
-
+    
     for(int k = 0; k < n; k++) {
        Console.WriteLine(valores[k] + " leds");
     }
-
+    
     /*
     Console.WriteLine("\nTeste");
     Console.WriteLine("{0}", string.Join(" ", separado));
