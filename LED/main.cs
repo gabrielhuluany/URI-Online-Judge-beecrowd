@@ -57,11 +57,8 @@ class Program {
 	
 	char[] separado = new char[numero.Count()];
 	
-	for(int x = 0; x < numero.Count(); x++) {
-	    separado[x] = numero[x];
-	}
-	
-	for(int j = 0; j < separado.Count(); j++) {
+	for(int j = 0; j < numero.Count(); j++) {
+	    separado[j] = numero[j];
 	    switch(separado[j]) {
 		case '0':
 		case '6':
