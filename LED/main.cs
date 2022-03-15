@@ -26,13 +26,13 @@ Saída
 Para cada caso de teste, imprima uma linha contendo o número de leds que João precisa 
 para montar o valor desejado, seguido da palavra "leds".
 
-	    ------------------------------------------------
-	    |  Exemplo de Entrada   |   Exemplo de Saída   |
-	    |  3                    |                      |
-	    |  115380               |   27 leds            |
-	    |  2819311              |   29 leds            |
-	    |  23456                |   25 leds            |
-	    ------------------------------------------------
+	------------------------------------------------
+	|  Exemplo de Entrada   |   Exemplo de Saída   |
+	|  3                    |                      |
+	|  115380               |   27 leds            |
+	|  2819311              |   29 leds            |
+	|  23456                |   25 leds            |
+	------------------------------------------------
 */
 
 using System;
