@@ -1,1 +1,1 @@
-# Uri-Online-Judge-beecrowd
+# URI Online Judge (agora beecrowd)
