@@ -46,25 +46,59 @@ class Program {
     Console.WriteLine("|_| | |_  _|   |  _| |_|  | |_|  _|");
     Console.WriteLine("\n");
     
-    int[] LED = new int[10];
-    LED[0] = 6;
-    LED[1] = 2;
-    LED[2] = 5;
-    LED[3] = 5;
-    LED[4] = 4;
-    LED[5] = 5;
-    LED[6] = 6;
-    LED[7] = 3;
-    LED[8] = 7;
-    LED[9] = 6;
-    
     Console.Write("Digite o número de casos de teste: ");
     int n = int.Parse(Console.ReadLine());
     
-    Console.Write("Digite um número: ");
-    List<int> lista = new List<int>(Console.ReadLine().Split(" ").Select(int.Parse).ToList());
+    int[] valores = new int[n];
     
+    for(int i = 0; i < n; i++) {
+    	Console.Write("Digite um número: ");
+	string numero = Console.ReadLine();
+	
+	char[] separado = new char[numero.Count()];
+	
+	for(int x = 0; x < numero.Count(); x++) {
+	    separado[x] = numero[x];
+	}
+	
+	for(int j = 0; j < separado.Count(); j++) {
+	    switch(separado[j]) {
+		case '0':
+		case '6':
+		case '9':
+		    valores[i] += 6;
+		    break;
+		case '1':
+		    valores[i] += 2;
+		    break;
+		case '2':
+		case '3':
+		case '5':
+		    valores[i] += 5;
+		    break;
+		case '4':
+		    valores[i] += 4;
+		    break;
+		case '7':
+		    valores[i] += 3;
+		    break;
+		case '8':
+		    valores[i] += 7;
+		    break;
+		default:
+		    valores[i] += 0;
+		    break;
+	    }
+	}
+    }
+
+    for(int k = 0; k < n; k++) {
+       Console.WriteLine(valores[k] + " leds");
+    }
+
+    /*
     Console.WriteLine("\nTeste");
-    Console.WriteLine("{0}", string.Join(" ", lista));
+    Console.WriteLine("{0}", string.Join(" ", separado));
+    */
   }
 }
