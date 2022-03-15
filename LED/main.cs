@@ -92,10 +92,5 @@ class Program {
     for(int k = 0; k < n; k++) {
        Console.WriteLine(valores[k] + " leds");
     }
-    
-    /*
-    Console.WriteLine("\nTeste");
-    Console.WriteLine("{0}", string.Join(" ", separado));
-    */
   }
 }
