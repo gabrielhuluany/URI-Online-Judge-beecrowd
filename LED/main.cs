@@ -13,7 +13,7 @@ João a descobrir a quantidade de leds necessário para montar o valor.
                         -–––––––––––––––––––––––––––––––––––––-
                         |  _     _  _       _   _  _   _   _  |
                         | | | |  _| _| |_| |_  |_   | |_| |_| |
-                        | |_| | |_  _|   |  _| |_|  | |_|   | |
+                        | |_| | |_  _|   |  _| |_|  | |_|  _| |
                         |                                     |
                         -–––––––––––––––––––––––––––––––––––––-
 
@@ -43,7 +43,7 @@ class Program {
   public static void Main (string[] args) {
 		Console.WriteLine(" _     _  _       _   _  _   _   _ ");
 		Console.WriteLine("| | |  _| _| |_| |_  |_   | |_| |_|");
-		Console.WriteLine("|_| | |_  _|   |  _| |_|  | |_|   |");
+		Console.WriteLine("|_| | |_  _|   |  _| |_|  | |_|  _|");
 		Console.WriteLine("\n");
 		
 		int[] LED = new int[10];
