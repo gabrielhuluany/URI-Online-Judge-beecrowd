@@ -55,11 +55,8 @@ class Program {
     	Console.Write("Digite um número: ");
 	string numero = Console.ReadLine();
 	
-	char[] separado = new char[numero.Count()];
-	
 	for(int j = 0; j < numero.Count(); j++) {
-	    separado[j] = numero[j];
-	    switch(separado[j]) {
+	    switch(numero[j]) {
 	       case '0':
 	       case '6':
 	       case '9':
